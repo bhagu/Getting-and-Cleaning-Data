@@ -20,31 +20,48 @@ For each record it is provided:
 
 ##Project Tasks
 
-1 Merges the training and the test sets to create one data set.
-2 Extracts only the measurements on the mean and standard deviation for each measurement. 
-3 Uses descriptive activity names to name the activities in the data set
-4 Appropriately labels the data set with descriptive variable names. 
-5 From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+- Merges the training and the test sets to create one data set
+- Extracts only the measurements on the mean and standard deviation for each measurement
+- Uses descriptive activity names to name the activities in the data set
+- Appropriately labels the data set with descriptive variable names 
+- From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+###Task 1 - Merge the training and the test sets to create one data set
+
+Remove objects from the current environment as a best practice. 
+Set the source directory for this activity.
+Bring in the data to R tables. (We would be bringinging in the Testing and Training datasets with Features and activity details)
+
+Files we need for this activity are mentioned below.
+Training Details
+ - subject_train.txt
+ - x_train.txt
+ - y_train.txt
+Testing Details
+ -	subject_test.txt
+ -	x_test.txt
+ -	y_test.txt
+
+and features.Txt and activity_labels.txt as well.
+
+To Merge the training and testing dataset, first assign column names to the tables (to ensure that the merging is happening as per the requirement - naming helps in resolving confusion. After this, merge the 2 datasets.
+
+###Task 2 - Extracts only the measurements on the mean and standard deviation for each measurement
+
+Using the grep command, filter the columns where we have mean and stddev in it
+
+###Task 3 - Uses descriptive activity names to name the activities in the data set
+
+Use the activity type table for this activity(by using Merge)
 
 
+###Task 4 - Appropriately labels the data set with descriptive variable names 
 
+This has already been accomplished during step 1 as part of best practices.
 
+###Task 5 - From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Use aggregate to compute the summary statistics, in this case the Mean and save the resulting "TidyData" to a text file.
 
 License Information : (for the dataset used in this activity)
 Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
