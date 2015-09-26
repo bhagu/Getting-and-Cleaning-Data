@@ -1,2 +1,8 @@
 # Getting-and-Cleaning-Data
-Github Repository for the Getting and Cleaning Data Coursera Course
+This Github Repository is for the Getting and Cleaning Data Coursera Course Main Project.
+
+The purpose of the project is to demonstrate one's ability to collect, work with, and clean a data set.
+
+The Data used for the project can be downloaded from the link mentioned below.
+<html>https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip </html>
+
