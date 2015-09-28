@@ -14,7 +14,7 @@ The activities are:
 - Uses descriptive activity names to name the activities in the data set
 - Appropriately labels the data set with descriptive variable names
 - From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-- 
+
 The code reads the input text files and then perform various data reordering/cleaning activity as well as merging activity to generate the final data.
 
 If you want to know more about the data source and the processing mechainsm in detail, please check out the Codebook document. 
